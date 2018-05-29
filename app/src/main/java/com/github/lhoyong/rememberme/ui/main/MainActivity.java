@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
@@ -40,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
 
     }
 
-
+    // 터치 이벤트
     @Override
     public boolean onTouch(View v, MotionEvent event) {
         switch (event.getAction()) {
@@ -48,7 +47,6 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
                 dragging = true;
                 if (firstDragging) {
                     startPosition = event.getY();
-                    Log.e("y", String.valueOf(event.getY()));
                     firstDragging = false;
                 }
                 break;
@@ -60,9 +58,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
                         Intent intent = new Intent(this, CameraActivity.class);
                         startActivity(intent);
                         overridePendingTransition(R.anim.slide_up, R.anim.slide_up_out);
-                    }
-                    //시작 Y가 끝 보다 작다면 터치가 위에서 아래로 이러우졌다는 것이고, 스크롤이 올라갔다는 뜻이다.
-                    else if ((startPosition < endPosition) && (endPosition - startPosition) > 500) {
+                    } else if ((startPosition < endPosition) && (endPosition - startPosition) > 500) {
 
 
                     }
@@ -72,10 +68,6 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
                 endPosition = 0;
                 dragging = false;
                 break;
-            case MotionEvent.ACTION_SCROLL:
-                Log.e("dee", "ee");
-                break;
-
         }
         return false;
     }
