@@ -3,9 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Users\gureg\workspace\ho_remember\app\app.iml" filepath="C:\Users\gureg\workspace\ho_remember\app\app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ho_remember.iml" filepath="$PROJECT_DIR$/ho_remember.iml" />
-      <module fileurl="file://C:\Users\gureg\workspace\ho_remember\rememberme.iml" filepath="C:\Users\gureg\workspace\ho_remember\rememberme.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rememberme.iml" filepath="$PROJECT_DIR$/rememberme.iml" />
     </modules>
   </component>
 </project>
