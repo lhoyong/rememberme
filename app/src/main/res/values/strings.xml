@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">RememberMe</string>
+    <string name="app_name">그날 갬성</string>
+
+    <string name="intro_info">그날-갬성은\n다음주의 나에게\n지난주의 추억을\n선물하는\n나만의 감성일기야.</string>
+    <string name="introNext_button">다음으로.</string>
+    <string name="introStart_button">시작하기.</string>
+    <string name="intro_nameInfo">너의 이름이\n뭐야..?</string>
+    <string name="intro_nameForm">내\n이름은</string>
+    <string name="sample_name">멋쟁이 사자</string>
 </resources>
